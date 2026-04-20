@@ -5,16 +5,13 @@
       "src": "hotel-website/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "installCommand": "npm install",
-        "buildCommand": "npm run build",
-        "outputDirectory": "build"
+        "distDir": "build"
       }
     }
   ],
   "routes": [
     {
-      "src": "/static/(.*)",
-      "dest": "/static/$1"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
