@@ -11,11 +11,12 @@
   ],
   "routes": [
     {
-      "handle": "filesystem"
+      "src": "/hotel-website/(.*)",
+      "dest": "/hotel-website/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/index.html"
+      "dest": "/hotel-website/index.html"
     }
   ]
 }
