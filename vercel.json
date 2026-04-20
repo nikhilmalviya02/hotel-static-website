@@ -11,19 +11,12 @@
   ],
   "routes": [
     {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/hotel-website/static/(.*)",
-      "dest": "/hotel-website/static/$1"
-    },
-    {
-      "src": "/hotel-website/(.*)",
-      "dest": "/hotel-website/index.html"
+      "src": "/static/(.*)",
+      "dest": "/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/hotel-website/index.html"
+      "dest": "/index.html"
     }
   ]
 }
