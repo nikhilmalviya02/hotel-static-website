@@ -9,86 +9,70 @@ const Gallery: React.FC = () => {
       id: 1,
       category: 'rooms',
       title: 'Presidential Suite',
-      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: '/rooms/Presidential Suite.png'
     },
     {
       id: 2,
-      category: 'dining',
-      title: 'Fine Dining Restaurant',
-      image: 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      category: 'rooms',
+      title: 'Executive Suite',
+      image: '/rooms/Executive Suite.png'
     },
     {
       id: 3,
       category: 'spa',
       title: 'Wellness Center',
-      image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: '/facilities/Wellness Center.png'
     },
     {
       id: 4,
       category: 'pool',
       title: 'Infinity Pool',
-      image: 'https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: '/facilities/Infinity Pool.png'
     },
     {
       id: 5,
       category: 'lobby',
       title: 'Grand Lobby',
-      image: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: '/facilities/Grand Lobby.png'
     },
     {
       id: 6,
       category: 'rooms',
       title: 'Deluxe Room',
-      image: 'https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: '/rooms/Deluxe Room.png'
     },
     {
       id: 7,
-      category: 'dining',
-      title: 'Rooftop Bar',
-      image: 'https://images.unsplash.com/photo-1514933651103-005eec06c04b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      category: 'rooms',
+      title: 'Family Room',
+      image: '/rooms/Family Room.png'
     },
     {
       id: 8,
       category: 'spa',
       title: 'Massage Therapy',
-      image: 'https://images.unsplash.com/photo-1540555700478-4be289fbecef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      image: '/facilities/Massage Therapy.png'
     },
     {
       id: 9,
-      category: 'exterior',
-      title: 'Hotel Exterior',
-      image: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      category: 'rooms',
+      title: 'Standard Room',
+      image: '/rooms/Standard Room.png'
     },
     {
       id: 10,
-      category: 'meeting',
-      title: 'Business Meeting',
-      image: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=500'
-    },
-    {
-      id: 11,
-      category: 'fitness',
-      title: 'Fitness Center',
-      image: 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
-    },
-    {
-      id: 12,
       category: 'rooms',
-      title: 'Standard Room',
-      image: 'https://images.unsplash.com/photo-1631049307264-da0ec9d70304?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80'
+      title: 'Standard Twin',
+      image: '/rooms/Standard Twin.png'
     }
   ];
 
   const categories = [
     { id: 'all', name: 'All Photos' },
     { id: 'rooms', name: 'Rooms' },
-    { id: 'dining', name: 'Dining' },
     { id: 'spa', name: 'Spa & Wellness' },
     { id: 'pool', name: 'Pool' },
     { id: 'lobby', name: 'Lobby' },
-    { id: 'exterior', name: 'Exterior' },
-    { id: 'meeting', name: 'Meetings' },
-    { id: 'fitness', name: 'Fitness' },
   ];
 
   const [selectedCategory, setSelectedCategory] = useState('all');
